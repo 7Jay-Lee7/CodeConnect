@@ -1,24 +1,53 @@
 # CodeConnect 
 
 CodeConnect is a social media platform developed for coders using the MERN stack. 👨‍💻
+This is a full-stack Social Media application built using the MERN stack, which stands for MongoDB, Express, React, and Node.js. The client folder contains the frontend of the application built using React and Formik and other libraries, while the backend is in a folder called server that uses Express, Mongoose, Bcrypt, and other libraries.
 
-## To get started
+### Login Page
+![Login](Login.png)
 
-To get started, you will need to clone the repository or download the code. Next, create a MongoDB database and link it to the application. An example .env file has been provided to guide you in this process. Once that is done, navigate to the server folder, uncomment the 3 imports and add data one time parts in the index.js file.
+### Main Application
+![Main](SocialMedia.png)
 
-To add dummy data to your MongoDB, run "npm run start" or "node index.js" in the server folder.
+## Getting Started
+To get started with this project, follow the steps below.
 
-## Launching for registration
+## Prerequisites
+You need to have Node.js and MongoDB installed on your machine.
 
-To launch the application, navigate to the client folder and execute "npm run start" in a separate terminal. This will open the application in your browser at http://localhost:3000.
+## Installing
+* Clone the repository
+* Install server dependencies using npm install in the server folder
+* Install client dependencies using npm install in the client folder
+* Create a .env file in the server folder and add the following variables:
+MONGO_URL=<your_mongodb_url>
+JWT_SECRET=<your_jwt_secret>
+PORT=<your_server_port>
 
-After registration, you will have access to your personalized login credentials that will sync with your MongoDB and give you access to all the available dummy data.
+## Running the Application
+* Start the server by running npm start in the server folder
+* Start the client by running npm start in the client folder
+* The application will be accessible at http://localhost:3000.
 
-## Customisation
+## Features
+The application provides the following features:
 
-CodeConnect can be customised by changing the application name, adding more data or launching on hosting platforms like [Render](https://dashboard.render.com/login) or [Glitch](https://glitch.com/). I have tested and recommend these two platforms for hosting MERN applications.
+* User authentication using JSON Web Tokens (JWT)
+* Ability to register a new user
+* Ability to create, read, update, and delete posts
+* Ability to like and comment on posts
+* Real-time updates using web sockets
 
-There are ofcourse other sites, but those two are my favourite for MERN applications so far.
+## Built With
+* MongoDB - NoSQL database used to store data
+* Express - Node.js web application framework used to build the backend
+* React - JavaScript library used to build the frontend
+* Node.js - JavaScript runtime used to build the backend
+* Socket.io - Library used for real-time updates
+* Bcrypt - Library used for password hashing
+* Formik - Library used for building forms
 
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 
